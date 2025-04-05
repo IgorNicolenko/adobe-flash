@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Custom Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff9c4; /* Light Yellow */
+    }
+
+    .top-bar {
+      background-color: #8B0000; /* Dark Red */
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #8B0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a30000;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">My Website</div>
+
+  <div class="content">
+    <h1>Welcome!</h1>
+    <p>This is a fully customizable site with a light yellow background and a dark red top bar.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("output").textContent = "You clicked the button!";
+    }
+  </script>
+
+</body>
+</html>
